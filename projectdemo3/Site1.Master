@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site1.master.cs" Inherits="projectdemo3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" type="text/css" href="css/home.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+ 
+
+<nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    
+      <!-- Logo Image -->
+      
+      <!-- Logo Text -->
+     <a href="home.aspx" style="color:white; text-decoration:none"><span class="text-uppercase font-weight-bold">Blood Bank Management</span></a>
+    
+    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+    <div id="navbarSupportedContent" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+       <%-- <li class="nav-item active"><a href="home.aspx" class="nav-link">Home <span class="sr-only">(current)</span></a></li>--%>
+        <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton1" OnClick="LinkButton1_Click" runat="server" Text="Donor Registration"></asp:LinkButton></li>
+        <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton2" OnClick="LinkButton2_Click" runat="server" Text="Send Request"></asp:LinkButton></li>
+        <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton3" OnClick="LinkButton3_Click"  runat="server" Text="View Request"></asp:LinkButton></li>
+           <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton4" OnClick="LinkButton4_Click"  runat="server" Text="Login"></asp:LinkButton></li>
+           <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton5" OnClick="LinkButton5_Click" runat="server" Text="Search"></asp:LinkButton></li>
+           <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton6" OnClick="LinkButton6_Click"  runat="server" Text="Admin Login"></asp:LinkButton></li>
+          <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton7" OnClick="LinkButton7_Click" runat="server" Text="Update profile" Visible="false"></asp:LinkButton></li>
+          <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton8" OnClick="LinkButton8_Click" runat="server" Text="blood donated" Visible="false"></asp:LinkButton></li>
+          <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton9" OnClick="LinkButton9_Click" runat="server" Text="view donation" Visible="false"></asp:LinkButton></li>
+          <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton10" OnClick="LinkButton10_Click"  runat="server" Text="View donor" Visible="false"></asp:LinkButton></li>
+          <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton11" OnClick="LinkButton11_Click"  runat="server" Text="delete donor" Visible="false"></asp:LinkButton></li>
+          <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton12" OnClick="LinkButton12_Click"  runat="server" Text="delete patient" Visible="false"></asp:LinkButton></li>
+          <li class="nav-item active"><asp:LinkButton CssClass="btn btn-danger" ID="LinkButton13" OnClick="LinkButton13_Click"  runat="server" Text="log out" Visible="false"></asp:LinkButton></li>
+          
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
